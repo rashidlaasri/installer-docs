@@ -40,14 +40,16 @@ export default function RootLayout({ children }) {
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-25L59Y07DK"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments) }
-            gtag('js', new Date());
-
-            gtag('config', 'G-25L59Y07DK');
-        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-25L59Y07DK" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments) }
+                gtag('js', new Date());
+                gtag('config', 'G-25L59Y07DK');`
+          }}
+        />
       </body>
     </html>
   )
