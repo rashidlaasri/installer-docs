@@ -5,7 +5,7 @@ During the installation process, the Laravel Web Installer, by default, redirect
 
 Change it to the desired route name, and the installer will redirect users to the specified location, providing you with the flexibility to tailor the post-installation navigation according to your application's structure and requirements.
 
-```php
+```js
 /*
 * The default homepage route name to redirect to
 *

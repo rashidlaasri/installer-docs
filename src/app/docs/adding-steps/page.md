@@ -10,7 +10,7 @@ php artisan make:step ApplicationConfig
 
 This command creates an **ApplicationConfig** class in the **app/Installer/Steps** directory, in the generated class (`app/Installer/Steps/ApplicationConfig.php`), customize the route, title, and description for your new step:
 
-```php
+```js
 <?php
 
 namespace App\Installer\Steps;
@@ -46,7 +46,7 @@ class ApplicationConfig extends Step implements StepInterface
 ```
 
 It also creates a controller for the new step in `app/Http/Controllers/ApplicationConfigController.php`:
-```php
+```js
 <?php
 
 namespace App\Http\Controllers;
@@ -64,7 +64,7 @@ class ApplicationConfigController extends Controller
 ```
 
 Finally, it also creates a view file for the new step in `resources/views/vendor/installer/application-config.blade.php`. Customize the content of this file to suit your specific installation step:
-```blade
+```js
 @extends('web-installer::layout')
 
 @section('content')
@@ -80,7 +80,7 @@ php artisan vendor:publish --tag=web-installer
 
 Next, navigate to the *config/installer.php* file. Within the steps array key, include your newly generated step. Place it in the desired order to determine its visibility during the installation process:
 
-```php
+```js
 'steps' => [
     ...
     new \App\Installer\Steps\ApplicationConfig,

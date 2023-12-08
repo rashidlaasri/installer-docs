@@ -5,7 +5,7 @@ The **Laravel Web Installer** simplifies the configuration of environment variab
 
 This UI allows you to effortlessly edit the values of environment variables, ensuring a smooth and accessible experience during the installation process. For further customization, you have the flexibility to add or remove specific values by modifying the keys within the **environment** array in the installer configuration file **config/installer.php**. Each key corresponds to its own input field, providing a straightforward mechanism to tailor the configuration settings based on your project's requirements.
 
-```php
+```js
 /**
  * The environment variables to set in .env file.
  *

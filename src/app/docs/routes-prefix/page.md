@@ -8,7 +8,7 @@ However, if this clashes with an already existing route in your application or i
 This straightforward customization allows you to integrate the installer seamlessly into your Laravel application without conflicting with any existing routes.
 
 
-```php
+```js
 /*
 * The default route prefix for all the routes.
 *

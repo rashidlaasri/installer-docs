@@ -5,7 +5,7 @@ The Laravel Web Installer is equipped with a predefined set of default server re
 
 Within this configuration file, you'll find the ability to add, modify, or remove specific server requirements according to the specific needs of your application.
 
-```php
+```js
 /**
  * The server requirements to verify before installation.
  *

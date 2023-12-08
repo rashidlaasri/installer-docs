@@ -7,7 +7,7 @@ Open the **config/installer.php** file, and within the **steps** array key, rear
 
 This straightforward approach allows you to tailor the user experience according to your specific requirements, ensuring a seamless and intuitive flow for your Laravel Web Installer.
 
-```php
+```js
 return [
     new \RachidLaasri\Installer\Steps\Welcome,
     new \App\Installer\Steps\YourCustomStep,
