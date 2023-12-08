@@ -8,7 +8,7 @@ export const navigation = [
         ],
     },
     {
-        title: 'Configurations',
+        title: 'Configuration',
         links: [
             { title: 'Adding steps', href: '/docs/adding-steps' },
             { title: 'Ordering steps', href: '/docs/ordering-steps' },
